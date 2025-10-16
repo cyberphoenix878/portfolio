@@ -21,6 +21,7 @@ body {
     background-color: transparent;
 }
 
+
 .container {
     text-decoration: none;
     display: flex;
@@ -47,6 +48,11 @@ body {
 .menu li a:hover {
     color: #686868;
 }
+
+.fa-bars{
+    display: none;
+}
+
 
 @media(max-width:1024px) {
     .menu {
@@ -80,10 +86,14 @@ body {
 
     .menu {
         display: none;
+    }
 
-        .container {
-            text-align: center;
-        }
+    .container {
+        text-align: center;
+    }
+
+    .fa-bars {
+        display: block;
     }
 }
 
@@ -204,7 +214,7 @@ body {
 
 @media(max-width:393px) {
     .hero-text {
-        height: 100vh;
+        height: 50vh;
     }
 
     .about-details {
@@ -250,6 +260,7 @@ body {
     height: 20vh;
     background-color: #f5f5ee;
     border-radius: 10px;
+    text-align: center;
 }
 
 h3 {
@@ -303,14 +314,19 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2em;
+        gap: 1em;
     }
-
+.projects{
+    padding: 100px;
+}
     .project {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2em;
+    }
+    .contacts{
+        padding: 50px;
     }
 }
 
@@ -340,7 +356,6 @@ form textarea {
     margin-bottom: 15px;
     outline: none;
 }
-
 .btn {
     color: white;
     background-color: black;
@@ -359,18 +374,22 @@ form textarea {
     justify-content: center;
     align-items: center;
 }
-.fa-instagram{
+
+.fa-instagram {
     font-size: 2.5em;
 }
-@media(max-width:743px){
-    .serv{
+
+@media(max-width:743px) {
+    .serv {
         height: 90vh;
     }
-    .project{
+
+    .project {
         height: 80vh;
     }
 }
-.footer{
+
+.footer {
     text-align: center;
     padding: 60px;
     background-color: #f5f5ee;
